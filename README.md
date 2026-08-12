@@ -15,6 +15,7 @@ If using Firefox browser, this tag may be called Storage.
 10. Double click the Value column corresponding to the SESSDATA row, select and copy it (a string of characters similar to xxxx% 2Cxxxx).
 
 How to enable scripts to automatically update and synchronize
+
 Open cron task editing: Enter crontab - e in the terminal and press enter. If it is the first time using it, you will be prompted to select the editor, choose Nano (simple) or Vim.
 Add a timed command: Enter a line of content in the following format in the editor:
 */20 * * * * /usr/bin/python3 /Users/sunhuiwen/bilibili_coins.py
@@ -43,6 +44,7 @@ Verify if the addition was successful: Execute crontab - l, and if you see the l
 10.双击 SESSDATA 这一行对应的 Value (值) 列，选中并复制它（一串类似 xxxx%2Cxxxx 的字符）。
 
 如何让脚本能够自动更新并同步
+
 打开 cron 任务编辑：在终端输入 crontab -e 并按回车。如果是第一次使用，会提示选择编辑器，选 nano（简单）或 vim 即可。
 添加一行定时指令：在编辑器中输入以下格式的一行内容：
 */20 * * * * /usr/bin/python3 /Users/sunhuiwen/bilibili_coins.py
