@@ -63,9 +63,10 @@ Verify if the addition was successful: Execute crontab - l, and if you see the l
 #/usr/bin/python3 是 Python 的完整路径（可以用 which python3 命令查看你的实际路径）。
 #/Users/sunhuiwen/bilibili_coins.py 是你的脚本完整路径。）
 
-保存并退出：
+保存并退出
 
 （ 如果用 nano：按 Ctrl+O，回车确认，再按 Ctrl+X。
+
 如果用 vim：按 Esc，输入 :wq，回车。
 验证是否添加成功：执行 crontab -l，如果看到刚才添加的那一行，说明任务已生效。）
 
