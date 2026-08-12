@@ -70,6 +70,9 @@ Verify if the addition was successful: Execute crontab - l, and if you see the l
 如果用 vim：按 Esc，输入 :wq，回车。
 验证是否添加成功：执行 crontab -l，如果看到刚才添加的那一行，说明任务已生效。）
 
+# 目前存在的问题
+需要每一个月替换一次SESSDATA值
+
 # 感谢为这个项目作出贡献的所有人！
 
 <img width="416" height="136" alt="image" src="https://github.com/user-attachments/assets/7605de91-7931-4780-9680-1e129046611a" />
