@@ -71,3 +71,7 @@ Verify if the addition was successful: Execute crontab - l, and if you see the l
 如果用 vim：按 Esc，输入 :wq，回车。
 验证是否添加成功：执行 crontab -l，如果看到刚才添加的那一行，说明任务已生效。）
 
+感谢为这个项目作出贡献的所有人！
+<img width="374" height="122" alt="image" src="https://github.com/user-attachments/assets/a0fc4147-45ee-4420-9080-216bcf3399be" />
+
+
