@@ -31,7 +31,7 @@ def get_coins():
             else:
                 msg = data.get("message", "未知错误")
                 if "频繁" in msg:
-                    print(f"请求过于频繁，等待5秒... (尝试 {attempt+1}/3)")
+                    print(f"触发了限流，等待5秒... (尝试 {attempt+1}/3)")
                     time.sleep(5)
                     continue
                 else:
@@ -47,7 +47,7 @@ def main():
     try:
         coins = get_coins()
     except Exception as e:
-        print(f"❌ 错误: {e}")
+        print(f"请求失败了，可能是你的脚本有一点问题: {e}")
         return
     data = {
         "title": "B站硬币",
