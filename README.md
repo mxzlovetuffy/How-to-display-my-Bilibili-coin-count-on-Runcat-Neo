@@ -73,9 +73,10 @@ Verify if the addition was successful: Execute crontab - l, and if you see the l
 
 # 感谢为这个项目作出贡献的所有人！
 
+<img width="416" height="136" alt="image" src="https://github.com/user-attachments/assets/7605de91-7931-4780-9680-1e129046611a" />
+
 <img width="374" height="122" alt="image" src="https://github.com/user-attachments/assets/a0fc4147-45ee-4420-9080-216bcf3399be" />
 
-<img width="416" height="136" alt="image" src="https://github.com/user-attachments/assets/7605de91-7931-4780-9680-1e129046611a" />
 
 
 
