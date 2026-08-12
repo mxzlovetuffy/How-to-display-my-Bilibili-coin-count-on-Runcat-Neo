@@ -1,5 +1,5 @@
-# Special thanks to Bilibili 未来小说家
-# 特别鸣谢Bilibili未来小说家
+# Special thanks to Bilibili 伟大小说家
+# 特别鸣谢Bilibili伟大小说家
 # How to display my Bilibili coin count on Runcat Neo
 # Part of the code is checked for errors and modified by AI
 # Please refer to the content to modify the file
@@ -72,6 +72,7 @@ Verify if the addition was successful: Execute crontab - l, and if you see the l
 验证是否添加成功：执行 crontab -l，如果看到刚才添加的那一行，说明任务已生效。）
 
 感谢为这个项目作出贡献的所有人！
+
 <img width="374" height="122" alt="image" src="https://github.com/user-attachments/assets/a0fc4147-45ee-4420-9080-216bcf3399be" />
 
 
