@@ -1,8 +1,6 @@
 # Special thanks to Bilibili 伟大小说家
 # 特别鸣谢Bilibili伟大小说家
-# How to display my Bilibili coin count on Runcat Neo
 # Part of the code is checked for errors and modified by AI
-# Please refer to the content to modify the file
 
 How to obtain your SESSDATA
 
