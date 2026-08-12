@@ -1,5 +1,5 @@
 # How to display my Bilibili coin count on Runcat Neo
-# #Part of the code is checked for errors and modified by AI
+# Part of the code is checked for errors and modified by AI
 
 How to obtain your SESSDATA
 
