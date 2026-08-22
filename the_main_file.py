@@ -1,6 +1,6 @@
 #you have to change two things,one is the SESSDATA and the other is the UID
 #some thing is run with deepseek
-#edit by sunhuiwen
+#edit by mxz
 import os
 import requests
 import sys
