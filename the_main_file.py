@@ -1,17 +1,20 @@
-#you have to change two things,one is the SESSDATA and the other is the UI
+#you have to change two things,one is the SESSDATA and the other is the UID
 #some thing is run with deepseek
-import json
+#edit by sunhuiwen
 import os
 import requests
-import time
-from datetime import datetime, timezone
-
+import sys   # 如果需要使用 sys.exit()
 
 SESSDATA = "you must to change it"
-
-UID = #you must to change it
-
+UID = "you must to change it"
 OUTPUT_FILE = os.path.expanduser("~/bilibili_coins.json")
+
+if SESSDATA == "you must to change it":
+    print("你还没有修改这个脚本的 sessdata 值")
+    sys.exit(1)
+if UID == "you must to change it":
+    print("你还没有修改这个文件的 UID 值")
+    sys.exit(1)
 
 
 def get_coins():
@@ -35,7 +38,7 @@ def get_coins():
                     time.sleep(5)
                     continue
                 else:
-                    raise Exception(f"API错误: {msg}")
+                    raise Exception(f"尝试调用bilibili的dev_api失败: {msg}")
         except Exception as e:
             print(f"请求失败: {e}，等待5秒... (尝试 {attempt+1}/3)")
             time.sleep(5)
@@ -47,7 +50,7 @@ def main():
     try:
         coins = get_coins()
     except Exception as e:
-        print(f"请求失败了，可能是你的脚本有一点问题: {e}")
+        print(f"请求失败了，尝试检查是否有正确修改脚本的键值（错误原因在后面列出）: {e}")
         return
     data = {
         "title": "B站硬币",
