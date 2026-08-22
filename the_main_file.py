@@ -3,7 +3,7 @@
 #edit by sunhuiwen
 import os
 import requests
-import sys   # 如果需要使用 sys.exit()
+import sys
 
 SESSDATA = "you must to change it"
 UID = "you must to change it"
