@@ -50,7 +50,7 @@ def main():
     try:
         coins = get_coins()
     except Exception as e:
-        print(f"❌ 失败了，这不是我们的问题，也不是你的错: {e}")
+        print(f"失败了，这不是我们的问题，也不是你的错: {e}")
         return
 
     data = {
