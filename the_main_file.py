@@ -1,9 +1,8 @@
 #you have to change two things,one is the SESSDATA and the other is the UI
 #some thing is run with deepseek
-#edit by mxz
 import os
 import requests
-import sys
+import sys 
 SESSDATA = "you must to change it"
 UID = "you must to change it"
 OUTPUT_FILE = os.path.expanduser("~/bilibili_coins.json")
