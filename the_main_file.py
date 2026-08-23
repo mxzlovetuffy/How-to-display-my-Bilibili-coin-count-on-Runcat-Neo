@@ -1,5 +1,6 @@
 #you have to change two things,one is the SESSDATA and the other is the UI
 #some thing is run with deepseek
+#edit by mxz
 import os
 import requests
 import sys 
@@ -33,27 +34,27 @@ def get_coins():
             else:
                 msg = data.get("message", "未知错误")
                 if "频繁" in msg:
-                    print(f"⚠️ 请求过于频繁，等待5秒... (尝试 {attempt+1}/3)")
+                    print(f"请求次数过多，等待5秒... (尝试 {attempt+1}/3)")
                     time.sleep(5)
                     continue
                 else:
                     raise Exception(f"API错误: {msg}")
         except Exception as e:
-            print(f"⚠️ 请求失败: {e}，等待5秒... (尝试 {attempt+1}/3)")
+            print(f"失败了，这不是我们的问题，也不是你的错: {e}，等待5秒... (尝试 {attempt+1}/3)")
             time.sleep(5)
             continue
-    raise Exception("重试3次均失败")
+    raise Exception("失败了，这不是我们的问题，也不是你的错，请尝试等待一会，然后再试一次")
 
 def main():
-    print("🔄 正在获取硬币数...")
+    print("正在从api读取值...")
     try:
         coins = get_coins()
     except Exception as e:
-        print(f"❌ 错误: {e}")
+        print(f"❌ 失败了，这不是我们的问题，也不是你的错: {e}")
         return
 
     data = {
-        "title": "B站硬币",
+        "title": "B站硬币",#此处可以更改标题
         "symbol": "bitcoinsign.circle.fill",
         "metricsBarValue": f"{coins:.1f} 枚",
         "metrics": [
@@ -67,7 +68,7 @@ def main():
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"✅ 更新成功：{coins:.1f} 枚 → {OUTPUT_FILE}")
+    print(f"成功从api读取到值：{coins:.1f} 枚 → {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
