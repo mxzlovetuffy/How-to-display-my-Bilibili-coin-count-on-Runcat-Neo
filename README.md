@@ -1,5 +1,3 @@
-# Special thanks to Bilibili 伟大小说家
-# 特别鸣谢Bilibili伟大小说家
 # Part of the code is checked for errors and modified by AI
 
 How to obtain your SESSDATA
